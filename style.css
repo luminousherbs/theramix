@@ -1,0 +1,14 @@
+body {
+    background-color: #222233;
+    margin: 0;
+    padding: 0;
+}
+
+.gridline {
+    outline: 1px solid white;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
