@@ -7,6 +7,7 @@ document.getElementById("play").addEventListener("click", async () => {
     const osc = new Tone.Oscillator("A2", "triangle").toDestination();
     osc.start();
     addEventListener("mousemove", async (event) => {
+        if (event.clientX > 100) return;
         osc.frequency.value = 440 * (2 ** (Math.floor(((24 / innerHeight) * event.clientY) + 45 - 69) / 12));
     })
     document.querySelectorAll(".gridline").forEach((e) => {
